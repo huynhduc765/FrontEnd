@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="Tutorials">
+  
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Custom Plunker</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="abc.js"></script>
+  </head>
+  
+  <body ng-controller="getAnswers">
+    <ul ng-repeat="section in sections">
+      <li>
+          {{section.id}} 
+      </li>
+      <ul ng-repeat="x in section.basicSkill">
+        <li >
+          {{x.subskillname}}
+        </li>
+        <ul >
+          <select>
+              <option ng-repeat="val in x.value" value="val">{{val}}</option>
+          </select>
+        </ul>
+      </ul>
+    </ul>
+  </body>
+
+</html>

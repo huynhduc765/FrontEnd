@@ -10,23 +10,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="input.css">
 </head>
 
 <body>
 
     <div class="container">
         <section>
-            <div class="form-group">
+            <div id="namer">
 
-                <div class="input-group ">
+                <!-- <div class="input-group ">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Khẳ năng viết email, tài liệu trao đồi bằng
-                            English:</span>
+                        <span class="input-group-text"  id="basic-addon1">Tên skil:</span>
                     </div>
                     <input type="text" class="form-control" aria-label="" aria-describedby="basic-addon1">
+                </div> -->
+
+                <div id="namer-input">
+                    <input type="text" name="namername" placeholder="Type your name">
                 </div>
             </div>
         </section>
+        <input class="btn btn-primary" type="button" value="Thêm thuộc tính">
 
         <section>
             <div class="alert alert-success" role="alert">
@@ -43,6 +48,8 @@
                         <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
+
+                    
                 </div>
                 <div class="form-group col-md-6">
 
@@ -202,6 +209,8 @@
                 <textarea class="form-control" aria-label="With textarea"></textarea>
             </div>
         </section>
+        <input class="btn btn-primary" type="button" value="Lưu">
+
     </div>
 
 

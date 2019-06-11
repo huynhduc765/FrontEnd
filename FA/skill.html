@@ -1,0 +1,51 @@
+<div class="body">
+            <div class="content">
+                <div class="container">
+                    <div class="ct1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Danh sách skill</h4>
+                            </div>
+                            <div class="col-md-8">
+                                <form class="form-inline my-2 my-lg-0 ">
+                                    <input class="form-control search" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </div>
+
+                        </div>
+                        <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên skill</th>
+                                        <th>Trainer</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ui-sref='.freshers'>
+                                        <td>1</td>
+                                        <td>Front-end</td>
+                                        <td>Âu Mậu Dương</td>
+                                    </tr>
+                                    <tr ui-sref='.freshers'>
+                                        <td>2</td>
+                                        <td>Java</td>
+                                        <td>Âu Mậu Dương</td>
+                                    </tr>
+                                    <tr ui-sref='.freshers'>
+                                        <td>3</td>
+                                        <td>dotNET</td>
+                                        <td>Âu Mậu Dương</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                    </div>
+                    <div ui-view="freshers"></div>
+    
+                </div>
+
+            </div>
+        </div>
